@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to bottom, #c7a5f3, #eeb9f3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+width: 1000px;
+height: 90vh;
+background-color: #000;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 10px 30px rgba(0, 0 , 0, 0.3);
+margin: 10px auto;
+
+}
+
+.left {
+    flex: 1;
+    background-image: url("./img/img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.right {
+    flex: 1;
+    padding: 40px;
+    color: white;
+}
+.right h1{
+    margin: 45px 0px 15px 60px;
+}
+.form-group{
+    margin: 20px;
+}
+.form-group label{
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group select{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom:1px solid #666;
+    background:transparent;
+    color: white;
+    font-size: 20px;
+    outline: none;
+}
+.submit-btn {
+    margin: 15px 0px 15px 15px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+  }
+
+  .submit-btn:hover {
+    background-color: #45a049;
+  }
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+input::placeholder {
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+  }
+  #gender{
+    color: rgb(194,194,194);
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+      margin: 20px;
+    }
+  
+    .left {
+      height: 200px;
+    }
+  
+    .right {
+      padding: 20px;
+    }
+  
+    .right h1 {
+      margin: 20px 0px 15px 0px;
+      text-align: center;
+    }
+  
+    .form-group {
+      margin: 15px 0;
+    }
+  
+    .submit-btn {
+      width: 100%;
+      margin: 20px 0 0 0;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      width: 1200px;
+    }
+  
+    .right h1 {
+      font-size: 36px;
+    }
+  
+    .form-group input,
+    .form-group select {
+      font-size: 22px;
+    }
+  
+    .submit-btn {
+      font-size: 22px;
+    }
+  }
+  
